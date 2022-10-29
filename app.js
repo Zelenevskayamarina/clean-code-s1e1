@@ -40,12 +40,12 @@ var createNewTaskElement=function(taskString){
   editInput.className="input";
 
   editButton.innerText="edit"; //innerText encodes special characters, HTML does not
-  editButton.className="button task-button-edit";
+  editButton.className="btn task-btn-edit";
 
-  deleteButton.className="button task-button-delete";
-  deleteButtonImg.className="button-delete-img";
+  deleteButton.className="btn task-btn-delete";
+  deleteButtonImg.className="btn-delete-img";
   deleteButtonImg.src='./remove.svg';
-  deleteButtonImg.alt='button-delete-task';
+  deleteButtonImg.alt='delete';
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -85,7 +85,7 @@ var editTask=function(){
 
   var editInput=listTask.querySelector('.input');
   var label=listTask.querySelector("label");
-  var editBtn=listTask.querySelector(".task-button-edit");
+  var editBtn=listTask.querySelector(".task-btn-edit");
   var containsClass=listTask.classList.contains("task-edit-mode");
   //if class of the parent is task-edit-mode
   if(containsClass){
@@ -158,8 +158,8 @@ var bindTaskEvents=function(listTask,checkBoxEventHandler){
   console.log("bind list task events");
   //select listTasks children
   var checkBox=listTask.querySelector(".task-checkbox");
-  var editButton=listTask.querySelector(".task-button-edit");
-  var deleteButton=listTask.querySelector(".task-button-delete");
+  var editButton=listTask.querySelector(".task-btn-edit");
+  var deleteButton=listTask.querySelector(".task-btn-delete");
 
   console.log(editButton)
 
@@ -187,8 +187,6 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
   //bind events to list tasks chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
-
 
 
 // issues with usability don't get seen until they are in front of a human tester

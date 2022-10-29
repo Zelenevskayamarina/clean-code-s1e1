@@ -1,4 +1,3 @@
-/* basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -22,12 +21,12 @@
   text-align: center;
 }  
 }
-.main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }  
-.button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -37,7 +36,7 @@
   cursor: pointer;
   outline: none;
 }
-.button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 #tasks-incomplete,
@@ -57,7 +56,6 @@
   padding-top: 20px;
 }
 
-/* heading */
 .task-title {
   color: #333;
   font-weight: 700;
@@ -84,12 +82,10 @@
   color: #333;
 }
 
-/* new task */
 .task-input {
   width: 318px;
 }
 
-/* task list */
 .task {
   overflow: hidden;
   padding: 20px 0;
@@ -101,7 +97,7 @@
   
   list-style: none;
 }
-.task .button {
+.task .btn {
 vertical-align: middle;
 }  
 .task-checkbox {
@@ -120,22 +116,21 @@ vertical-align: middle;
   vertical-align: middle;
   width: 226px
 }
-.button-delete-img {
+.btn-delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete-img:hover {
+.btn-delete-img:hover {
   transform: rotateZ(0);
 }
-/* completed */
+
 #tasks-completed .task-subtitle {
   text-decoration: line-through;
   color: #888;
 }
 
-/* edit task */
 .task .input {
   display: none
 }
