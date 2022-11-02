@@ -25,9 +25,8 @@ var createNewTaskElement=function(taskString){
   //button.delete;
   var deleteButton=document.createElement("button");//delete button;
   var deleteButtonImg=document.createElement("img");//delete button image;
-  listTask.className="task";
-  checkBox.className="task-completed__checkbox";
-  checkBox.className="task-incomplete__checkbox";
+  listTask.className="task";  
+  checkBox.className="task__checkbox";
   label.innerText=taskString;
   label.className="subtitle";
   //each elements, needs appending;
@@ -127,7 +126,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(listTask,checkBoxEventHandler){
   console.log("bind list task events");
   //select listTasks children
-  var checkBox=listTask.querySelector(".task-incomplete__checkbox");
+  var checkBox=listTask.querySelector(".task__checkbox");
   var editButton=listTask.querySelector(".task-edit__btn");
   var deleteButton=listTask.querySelector(".task-delete__btn");
   console.log(editButton);
