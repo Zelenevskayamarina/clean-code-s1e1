@@ -112,11 +112,10 @@
   vertical-align: middle;
 }
 
-.task-incomplete__checkbox,
-.task-completed__checkbox {
+.task__checkbox {
   margin: 0 10px;
   vertical-align: middle;
-}
+} 
 
 .subtitle {
   padding-left: 10px;
